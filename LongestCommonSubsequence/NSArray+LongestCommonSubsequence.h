@@ -13,5 +13,11 @@
 - (NSIndexSet*) indexesOfCommonElementsWithArray:(NSArray*)array;
 - (NSIndexSet*) indexesOfCommonElementsWithArray:(NSArray*)array addedIndexes:(NSIndexSet**)addedIndexes removedIndexes:(NSIndexSet**)removedIndexes;
 
+-(NSArray *) subarrayWithIndexes:(NSIndexSet *) indexes;
+
+-(NSIndexSet *) indexesOfCommonElementsWithArray:(NSArray*) array
+									addedIndexes:(NSIndexSet**) addedIndexes
+								  removedIndexes:(NSIndexSet**) removedIndexes
+									movedIndexes:(NSMutableDictionary**) movedIndexes;
 
 @end
